@@ -26,5 +26,4 @@ This repository contains my practical SOC Analyst projects focused on:
 
 ## Labs & Practice
 - TryHackMe
-- Hack The Box Academy
 - picoCTF
