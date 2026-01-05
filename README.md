@@ -1,4 +1,4 @@
-# SOC Analyst Portfolio
+# Портфолио SOC-аналитика
 
 ## About
 This repository contains my practical SOC Analyst projects focused on:
