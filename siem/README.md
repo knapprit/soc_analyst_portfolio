@@ -1,3 +1,3 @@
-# SIEM Projects
+# SIEM проекты
 
-This folder contains SIEM-related projects, queries, and log analysis.
+Этот раздел посвящён моей практике работы с SIEM-системой Splunk в контексте задач SOC-аналитика.
