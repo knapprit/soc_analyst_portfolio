@@ -25,5 +25,5 @@ This repository contains my practical SOC Analyst projects focused on:
 - reports/ — Investigation reports and write-ups
 
 ## Labs & Practice
-- TryHackMe
 - picoCTF
+- Boss of the SOC (BOTS) — Splunk
