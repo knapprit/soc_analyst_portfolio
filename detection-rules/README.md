@@ -1,9 +1,9 @@
-# Detection Rules
+# Правила обнаружения
 
-This directory contains detection rules created for SOC analysis and monitoring.
+Этот каталог содержит правила обнаружения, созданные для анализа и мониторинга SOC.
 
-The rules are designed to identify suspicious or malicious activity in logs and files and are mapped to the MITRE ATT&CK framework where applicable.
+Правила предназначены для выявления подозрительной или вредоносной активности в журналах и файлах и, где это применимо, сопоставляются с платформой MITRE ATT&CK.
 
-## Contents
-- Sigma rules for SIEM-based detections
-- YARA rules for malware and file analysis
+## Содержимое
+- Правила Sigma для обнаружения на основе SIEM
+- Правила YARA для анализа вредоносных программ и файлов
