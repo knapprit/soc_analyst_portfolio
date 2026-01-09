@@ -1,29 +1,26 @@
 # Портфолио SOC-аналитика
 
-## About
-This repository contains my practical SOC Analyst projects focused on:
-- SIEM log analysis
-- Threat detection and monitoring
-- Incident response
-- Threat hunting
-- Detection engineering
+## Обо мне
+В этом репозитории собраны мои практические проекты SOC-аналитиков, посвященные:
+- Анализу журналов SIEM
+- Обнаружению и мониторингу угроз
+- Реагированию на инциденты
+- Поиску угроз
+- разработке методов обнаружения
 
-## Skills
-- SIEM: Splunk, ELK
-- Log analysis (Windows, Linux, Network)
-- Detection rules (Sigma, YARA)
-- Incident response
+## Навыкам
+- SIEM: Splunk
+- Анализу журналов (Windows, Linux, сеть)
+- Правила обнаружения (Sigma, YARA)
+- Реагирование на инциденты
 - MITRE ATT&CK
-- Basic Python scripting
 
-## Repository Structure
-- siem/ — SIEM queries and log analysis
-- detection-rules/ — Sigma and YARA rules
-- incident-response/ — Incident investigation cases
-- threat-hunting/ — Threat hunting hypotheses and results
-- scripts/ — Helper scripts for SOC tasks
-- reports/ — Investigation reports and write-ups
+## Структура хранилища
+- siem/ — запросы SIEM и анализ журналов
+- правила обнаружения/ — правила Sigma и YARA
+- реагирование на инциденты/ - Случаи расследования инцидентов
+- поиск угроз/ — Гипотезы и результаты поиска угроз
 
-## Labs & Practice
+## Лабораторные работы и практика
 - picoCTF
-- Boss of the SOC (BOTS) — Splunk
+- Blue Team Labs Online
