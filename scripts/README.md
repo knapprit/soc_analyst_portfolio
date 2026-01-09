@@ -1,11 +1,11 @@
-# SOC Helper Scripts
+# Вспомогательные скрипты SOC
 
-This folder contains simple helper scripts used to support SOC operations.
+В этой папке содержатся простые вспомогательные скрипты, используемые для поддержки операций SOC.
 
-## Examples
-- Log parsing and normalization
-- IOC extraction
-- Hash calculation and verification
-- Automation of repetitive analysis tasks
+## Примеры
+- Анализ и нормализация логов
+- Извлечение IOC
+- Вычисление и проверка хэша
+- Автоматизация повторяющихся задач анализа
 
-Scripts are written for defensive and educational purposes.
+Скрипты написаны для защитных и образовательных целей.
