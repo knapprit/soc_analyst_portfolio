@@ -1,5 +1,5 @@
-# Incident Response
+# Реагирование на инциденты
 
-This directory contains incident response case studies and investigation workflows.
+Этот каталог содержит тематические исследования по реагированию на инциденты и рабочие процессы расследования.
 
-Each case demonstrates the steps taken to analyze, contain, and respond to security incidents in a SOC environment.
+В каждом случае демонстрируются шаги, предпринятые для анализа, локализации и реагирования на инциденты безопасности в среде SOC.
