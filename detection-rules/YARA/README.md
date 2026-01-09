@@ -1,11 +1,11 @@
-# YARA Rules
+# Правила YARA
 
-This folder contains YARA rules used for basic malware detection and file analysis.
+Эта папка содержит правила YARA, используемые для базового обнаружения вредоносных программ и анализа файлов.
 
-## Use Cases
-- Identifying suspicious files
-- Matching known malware patterns
-- Supporting incident response investigations
+## Варианты использования
+- Выявление подозрительных файлов
+- Сопоставление известных шаблонов вредоносных программ
+- Поддержка расследований по реагированию на инциденты
 
-## Notes
-Rules are created for learning and defensive analysis and are not intended for offensive use.
+## Примечания
+Правила созданы для изучения и защитного анализа и не предназначены для использования в наступательных целях.
