@@ -1,12 +1,12 @@
-# Sigma Rules
+# Правила Sigma
 
-This folder contains Sigma detection rules for identifying suspicious activity in security logs.
+В этой папке содержатся правила обнаружения Sigma для выявления подозрительных действий в журналах безопасности.
 
-## Focus Areas
-- Authentication attacks
-- Suspicious process execution
-- PowerShell and command-line abuse
-- Persistence and lateral movement techniques
+## Основные области
+- Атаки на аутентификацию
+- Подозрительное выполнение процессов
+- Злоупотребление PowerShell и командной строкой
+- Методы сохранения и бокового перемещения
 
-## Notes
-These rules are written for educational and defensive purposes and can be adapted for different SIEM platforms.
+## Примечания
+Эти правила написаны в образовательных и защитных целях и могут быть адаптированы для различных платформ SIEM.
