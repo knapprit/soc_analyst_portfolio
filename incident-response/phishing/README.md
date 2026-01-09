@@ -1,11 +1,11 @@
-# Phishing Incidents
+# Инциденты с фишингом
 
-This folder contains phishing investigation cases.
+В этой папке содержатся случаи расследования фишинга.
 
-## Investigation Steps
-- Email header analysis
-- URL and domain inspection
-- Indicator of Compromise (IOC) extraction
-- Recommended response actions
+## Этапы расследования
+- Анализ заголовков электронных писем
+- Проверка URL-адресов и доменов
+- Извлечение индикатора компрометации (IOC)
+- Рекомендуемые ответные действия
 
-All examples are based on simulated or lab environments.
+Все примеры основаны на моделируемых или лабораторных условиях.
