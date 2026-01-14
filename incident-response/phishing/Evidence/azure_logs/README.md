@@ -1,4 +1,4 @@
-#Подозрительная активность в Microsoft 365 (Search → MailItemsAccessed → Set-Mailbox SYSTEM)
+## Подозрительная активность в Microsoft 365 (Search → MailItemsAccessed → Set-Mailbox SYSTEM)
 На Снимок экрана (20).png зафиксирована последовательность событий Microsoft 365, характерная для **компрометации почтового ящика**:
 
 1. **Поиск по почтовому содержимому (`Search`)**  
