@@ -1,6 +1,6 @@
 ## Email Evidence 01 — Подозрительное приглашение Copilot
 
-![Email 01](./Evidence/emails/email_01_phishing.png)
+![email_01_phishing.png](./Evidence/emails/email_01_phishing.png)
 
 На данном скриншоте представлено электронное письмо,
 полученное CFO в период, предшествующий началу подозрительных
