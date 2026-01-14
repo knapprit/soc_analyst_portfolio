@@ -1,6 +1,6 @@
 ## Email Evidence 01 — Подозрительное приглашение Copilot
 
-![email_01_phishing.png](./Evidence/emails/email_01_phishing.png)
+![email_01](./Evidence/emails/email_01_phishing.png)
 
 На данном скриншоте представлено электронное письмо,
 полученное CFO в период, предшествующий началу подозрительных
@@ -31,7 +31,7 @@
 
 ## Email Evidence 02 — Требование о финансовом одобрении
 
-![Email 02](./Evidence/emails/email_02.png)
+![email_02](./Evidence/emails/email_02.png)
 
 Данное письмо указывает на то, что любые операции,
 связанные с переводом средств из корпоративного пенсионного фонда,
