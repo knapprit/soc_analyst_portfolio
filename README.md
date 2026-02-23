@@ -21,7 +21,7 @@
 -  Incident-response/ - Случаи расследования инцидентов
 - scripts/ - вспомогателные скрипты для SOC
 
-## Лабораторные работы и практика
+## Основные лабораторные работы и практика
 - picoCTF
 - Blue Team Labs Online
 - Сyberdefenders lab
